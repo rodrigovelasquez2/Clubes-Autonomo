@@ -18,7 +18,7 @@ var colors = [
 
 function connect(event) {
 
-    var token = "TuTokenDeAutorización"; // Reemplaza con el token adecuado
+    var token = localStorage.getItem('token'); // Obtienes el token
 
     if (token) {
         fetch('/api/usuarios', {
