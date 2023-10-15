@@ -128,16 +128,19 @@ button.accent {
 }
 
 .chat-container {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
     max-width: 700px;
     margin-left: 0;
-    margin-right:0;
+    margin-right: 0;
     background-color: #fff;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     margin-top: 30px;
     height: calc(100% - 60px);
     max-height: 600px;
     position: relative;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
 }
+
 
 #chat-page ul {
     list-style-type: none;
