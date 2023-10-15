@@ -1,7 +1,7 @@
 package com.cursojava.curso.config;
 
-import com.chatRodvels.chatRodvels.chat.ChatMessage;
-import com.chatRodvels.chatRodvels.chat.MessageType;
+import com.cursojava.curso.controllers.ChatMessage;
+import com.cursojava.curso.controllers.MessageType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
