@@ -10,6 +10,8 @@ async function iniciarSesion() {
     datos.email = document.getElementById('txtEmail').value;
     datos.password = document.getElementById('txtPassword').value;
 
+
+
     // Envía una solicitud POST al servidor (similar al método 'login' del AuthController).
     const request = await fetch('api/login', {
         method: 'POST',
@@ -22,13 +24,16 @@ async function iniciarSesion() {
     });
 
     // Espera la respuesta del servidor.
-    const respuesta = await request.text(); // Obtiene una lista de usuarios.
+    const respuesta = await request.text(); // Suponiendo que 'request' es tu solicitud y obtienes una respuesta en texto.
+    const respuestaJSON = JSON.parse(respuesta); // Convertimos el texto a un objeto JSON
+    const tokenJWT = respuestaJSON.tokenJWT; // Accedemos a la propiedad 'tokenJWT' del objeto JSON
 
     // Comprueba si el inicio de sesión fue exitoso.
     if (respuesta != 'FAIL') {
         // Si es exitoso, almacena el token JWT y el correo del usuario en el localStorage
-        localStorage.token = respuesta;
+        localStorage.token = tokenJWT;
         localStorage.email = datos.email;
+
         // Redirige al usuario a la página 'usuarios.html'.
         window.location.href = 'usuarios.html';
     } else {

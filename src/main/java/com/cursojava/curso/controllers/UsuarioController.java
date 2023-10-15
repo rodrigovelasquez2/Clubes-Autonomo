@@ -8,6 +8,7 @@ import de.mkammerer.argon2.Argon2Factory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
+import com.cursojava.curso.ENUM.*;
 
 import java.util.List;
 
@@ -25,22 +26,6 @@ public class UsuarioController {
 
     @Autowired
     private JWTUtil jwtUtil;
-
-    /**
-     * Obtiene un usuario por su ID.
-     * @param id El ID del usuario a obtener.
-     * @return El usuario correspondiente al ID especificado.
-     */
-    @RequestMapping(value = "api/usuarios/{id}", method = RequestMethod.GET)
-    public Usuario getUsuario(@PathVariable long id) {
-        Usuario usuario = new Usuario();
-        usuario.setId(id);
-        usuario.setNombre("Lucas");
-        usuario.setApellido("Moy");
-        usuario.setEmail("lucas@gmail.com");
-        usuario.setTelefono("09992929");
-        return usuario;
-    }
 
     /**
      * Obtiene la lista de usuarios.
@@ -67,14 +52,16 @@ public class UsuarioController {
 
     /**
      * Registra un nuevo usuario en la base de datos.
-     * @param usuario El usuario a registrar.
+     * @return  usuario El usuario a registrar.
      */
     @RequestMapping(value = "api/usuarios", method = RequestMethod.POST)
-    public void registrarUsuario(@RequestBody Usuario usuario) {
+    public Usuario registrarUsuario(@RequestBody Usuario usuario) {
         Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
         String hash = argon2.hash(1, 1024, 1, usuario.getPassword());
         usuario.setPassword(hash);
+        usuario.setRol(String.valueOf(Rol.USUARIO)); // Se añade el rol de usuarios
         usuarioDAO.registrar(usuario);
+        return usuario;
     }
 
     /**
