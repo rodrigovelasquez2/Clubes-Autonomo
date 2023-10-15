@@ -26,7 +26,7 @@ async function iniciarSesion() {
 
     // Comprueba si el inicio de sesión fue exitoso.
     if (respuesta != 'FAIL') {
-        // Si es exitoso, almacena el token JWT y el correo del usuario en el almacenamiento local.
+        // Si es exitoso, almacena el token JWT y el correo del usuario en el localStorage
         localStorage.token = respuesta;
         localStorage.email = datos.email;
         // Redirige al usuario a la página 'usuarios.html'.
