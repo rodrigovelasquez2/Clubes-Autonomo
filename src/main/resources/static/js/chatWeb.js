@@ -19,8 +19,9 @@ var colors = [
 function connect(event) {
 
     var token = localStorage.getItem('token'); // Obtienes el token
+    var tokenEmail = localStorage.getItem('email'); // Obtienes el token
 
-    if (token) {
+    if (token && tokenEmail) {
         fetch('/api/usuarios', {
             method: 'GET',
             headers: {
