@@ -17,19 +17,37 @@ var colors = [
 ];
 
 function connect(event) {
-    username = document.querySelector('#name').value.trim();
 
-    if(username) {
-        usernamePage.classList.add('hidden');
-        chatPage.classList.remove('hidden');
+    var token = "TuTokenDeAutorización"; // Reemplaza con el token adecuado
 
-        var socket = new SockJS('/ws');
-        stompClient = Stomp.over(socket);
-
-        stompClient.connect({}, onConnected, onError);
+    if (token) {
+        fetch('/api/usuarios', {
+            method: 'GET',
+            headers: {
+                'Authorization': token
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data) {
+                    // Obtener el nombre del usuario desde la respuesta de la API
+                    username = data.nombre; // Asumiendo que el campo se llama "nombre"
+                    usernamePage.classList.add('hidden');
+                    chatPage.classList.remove('hidden');
+                    var socket = new SockJS('/ws');
+                    stompClient = Stomp.over(socket);
+                    stompClient.connect({}, onConnected, onError);
+                } else {
+                    console.error('Error al obtener datos del usuario desde la API');
+                }
+            })
+            .catch(error => {
+                console.error('Error al obtener datos del usuario desde la API:', error);
+            });
     }
     event.preventDefault();
-}
+
+}//fin Connect
 
 
 function onConnected() {
