@@ -11,7 +11,6 @@ public class ChatController {
     @SendTo("/topic/public")
     public ChatMessage sendMessage(@Payload ChatMessage chatMessague) {
         return chatMessague;
-
     }//Fin ChatMessage
 
     @MessageMapping("/chat.addUser")
@@ -21,5 +20,4 @@ public class ChatController {
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;
     }
-
 }//Fin ChatController
