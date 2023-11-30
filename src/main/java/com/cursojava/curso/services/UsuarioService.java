@@ -38,21 +38,24 @@ public class UsuarioService implements UsuarioDAO {
         this.usuarioRepository.save(usuario);
     }
 
+
     @Override
     @Transactional(readOnly = true) //Este es solo de lectura
     public Usuario obtenerUsuarioPorCredenciales(Usuario usuario) {
+        // Buscar usuario por email en la base de datos.
         Optional<Usuario> usuarioOptional = this.usuarioRepository.findByEmail(usuario.getEmail());
         Usuario usuarioEncontrado = null;
         if(usuarioOptional.isPresent()){ //este usuario esta presente?
-            usuarioEncontrado = usuarioOptional.get();
-            String passwordHashed = usuarioEncontrado.getPassword();
+            usuarioEncontrado = usuarioOptional.get();         // Obtener el usuario encontrado.
+            String passwordHashed = usuarioEncontrado.getPassword();    // Obtener el hash de la contraseña almacenada en la base de datos.
             log.info("Password hashed: " + passwordHashed); //System.out.println("")
             Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
-            if (argon2.verify(passwordHashed, usuario.getPassword())){
-                log.info("Usuario encontrado! {}", usuarioEncontrado);
+            if (argon2.verify(passwordHashed, usuario.getPassword())){  // Verificar si la contraseña proporcionada coincide con la almacenada.
+                log.info("Usuario encontrado! {}", usuarioEncontrado);  // Las credenciales son válidas, usuario autenticado con éxito.
                 return usuarioEncontrado;
             }
         }
-        return usuarioEncontrado;
+        return usuarioEncontrado;    // Si el usuario no existe o la contraseña no coincide, devolver null.
+
     }
 }
