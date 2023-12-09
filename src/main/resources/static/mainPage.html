@@ -25,7 +25,7 @@
               <a href="#" class="button-container">
                   <h2>INICIO</h2>
               </a>
-              <a href="#gamer" " class="button-container">
+              <a href="#gamer" class="button-container">
                   <h2>CLUBS</h2>
               </a>
           </div>
@@ -99,9 +99,10 @@
           if (confirmLogout) {
               // Agregar un retraso de 2 segundos (2000 milisegundos) antes de redirigir
               setTimeout(function () {
-                  window.location.href = 'index.html';
+                  // Cambiar el historial del navegador y redirigir
                   history.pushState(null, null, 'index.html');
-              }, 1000); // Cambiar el valor de 1000 según la duración deseada en milisegundos
+                  window.location.href = 'index.html';
+              }, 2000); // Cambiar el valor de 2000 según la duración deseada en milisegundos
           }
       }
   </script>
