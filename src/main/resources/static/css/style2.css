@@ -1,4 +1,3 @@
-
 body {
     padding: 0;
     margin: 0;
@@ -6,26 +5,37 @@ body {
     width: 100%;
     position: relative;
     background-image: url(../contenido/img/fondo2.jpg);
-    background-image: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header {
     padding: 20px;
     position: relative;
-    margin-left: 87%;
+    margin-left: 5%; /* Ajusta el margen izquierdo para pantallas más grandes */
 }
 
 .login_body {
     position: relative;
-    margin-left: 40%;
+    margin-left: 50%;
     transform: translateX(-50%);
 }
 
 .card {
-    width: 500px; 
-    height: 400px; 
+    width: 80%; /* Haz que la tarjeta sea más flexible */
+    max-width: 500px; /* Establecer un ancho máximo */
+    margin: 0 auto; /* Centrar la tarjeta */
+    height: auto; /* Permitir que la altura sea determinada por el contenido */
 }
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+        margin-left: 10%; /* Ajusta el margen izquierdo para pantallas más pequeñas */
+    }
 
-
+    .login_body {
+        margin-left: 10%;
+    }
+}
