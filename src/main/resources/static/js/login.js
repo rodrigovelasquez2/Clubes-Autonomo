@@ -10,7 +10,6 @@ async function iniciarSesion() {
     datos.email = document.getElementById('txtEmail').value;
     datos.password = document.getElementById('txtPassword').value;
 
-
     // Verifica si los campos de correo electrónico y contraseña están vacíos.
     if (datos.email === "" || datos.password === "") {
         // Muestra un mensaje de error si algún campo está vacío.

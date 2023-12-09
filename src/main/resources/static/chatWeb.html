@@ -8,63 +8,53 @@
     <title>Video Page - YouTube Style</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="css/styles.css" rel="stylesheet"/> <!--Estilos de toda la pagina del mainPage-->
-    <link rel="stylesheet" href="css/section.css"> <!--Estilos de chat web-->
+    <link rel="stylesheet" href="/css/style4.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/section.css">
 </head>
 <body>
-<!-- Navigation -->
-<!-- Navbar similar a YouTube -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">Your Video Site</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Trending</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Subscriptions</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Library</a></li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
-            <a class="btn btn-dark" href="#!"><i class="bi bi-camera-fill me-1"></i>Upload Video</a>
+    <div class="contentc">
+        <div class="headerc">
+            <div class="logo">
+              <a href="#">
+                <img src="/contenido/img/logoClub.png" alt="">
+              </a>
+            </div>
+            <div class="main-navc">
+                <a href= "mainPage.html" class="button-containerc">
+                    <h2>INICIO</h2>
+                </a>
+                <a onclick="SmoothScroll('movies');" class="button-containerc">
+                    <h2>CLUBS</h2>
+                </a>
+                <a onclick="SmoothScroll('search');" class="button-containerc">
+                    <h2>BUSCAR</h2>
+                </a>
+            </div>
+            <div class="right-navc">
+                <div class="button-containerc loginc">
+                    <h2>Salir</h2>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
 
 <!-- Video Section similar a YouTube -->
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
+<section class="py-1">
+    <div class="container px-4 px-lg-2 mt-3">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-8 mb-5"> <!-- Columna para el video principal -->
                 <div class="video-container">
                     <!-- Video en vivo -->
-                    <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=f02mOEt11OQ&t=49s" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/y6nBNZ5S0Gk" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     <div class="video-details">
-                        <h5 class="fw-bolder">Video Title</h5>
-                        <p class="text-secondary">123K views • 2 hours ago</p>
-                        <p class="fw-normal">Description of the video.</p>
+                        <h5 class="fw-bolder">Super Mario Odyssey</h5>
+                        <p class="fw-normal">Únete a Mario y su compañero Cappy en esta monumental aventura en 3D al mejor estilo trotamundos con Super Mario Odyssey para Nintendo Switch.
+                        </p>
                     </div>
                 </div>
                 <!-- Comentarios similares a YouTube -->
-                <div class="video-comments">
-                    <h3 class="fw-bolder">Comments</h3>
-                    <div class="comment">
-                        <img class="user-avatar" src="user_avatar.jpg" alt="User">
-                        <div class="comment-details">
-                            <h6 class="fw-bolder">Username</h6>
-                            <p class="fw-normal">Comment text goes here. Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <!-- Agrega más comentarios aquí -->
-                </div>
             </div>
 
             <!---Seccion para el CHAT WEB-->
@@ -72,9 +62,12 @@
                 <aside>
                     <div id="username-page">
                         <!-- <div class="username-page-container"> -->
-                        <h1 class="title">Descubre quienes están escribiendo...</h1>
+                        <h1 class="title">Descube quienes estan escribiendo...</h1>
                         <form id="usernameForm" name="usernameForm">
-
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Username" autocomplete="off"
+                                       class="form-control"/>
+                            </div>
                             <div class="form-group">
                                 <button id="entrarChatConUser" type="submit" class="accent username-submit">Start Chatting</button>
                             </div>
@@ -118,17 +111,18 @@
 </section>
 
 <!-- Footer similar a YouTube -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+<div class="bottom">
+    <div class="btn-row">
+        <p>© 2023, Universidad Autonoma del Perú</p>
     </div>
-</footer>
+</div>
+</div>
 
 <!--Scripts-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
-<script src="js/chatWeb.js"></script> <!--JavaScript del ChatWeb-->
+<script src="js/chatWeb.js"></script>
 </body>
 </html>
