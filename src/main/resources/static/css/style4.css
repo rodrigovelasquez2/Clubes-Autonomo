@@ -172,12 +172,6 @@ a {
 
 /* END HEADER */
 
-
-
-
-
-
-
 /* FOOTER */
 .bottom {
     width: 100%;
@@ -187,39 +181,35 @@ a {
     background-color: #141414;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
-.bottom .btn-row {
-    width: 50%;
-    margin: 3px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Añadimos reglas de medios para hacer ajustes responsive */
+@media only screen and (max-width: 600px) {
+    .bottom .btn-row {
+        width: 80%;
+    }
+
+    .bottom .btn-row h4 {
+        font-size: 10px;
+    }
+
+    .bottom .brand h1 {
+        font-size: 25px;
+    }
+
+    .btn-row p {
+        font-size: 12px;
+    }
 }
 
-.bottom .btn-row h4 {
+/* Texto blanco y centrado para el footer */
+.bottom h4,
+.bottom h1,
+.bottom p {
     color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    text-align: center;
 }
 
-.bottom .btn-row h4:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.bottom .brand {
-    display: flex;
-}
-
-.bottom .brand h1 {
-    font-family: "Anton", sans-serif;
-    font-size: 35px;
-}
-
-.btn-row p {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-}
 /* END FOOTER */

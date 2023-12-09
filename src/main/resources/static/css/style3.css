@@ -222,9 +222,9 @@ a {
     align-items: center;
     background: rgb(20, 20, 20);
     background: linear-gradient(
-        0deg,
-        rgba(20, 20, 20, 1) 0%,
-        rgba(255, 255, 255, 0) 36%
+            0deg,
+            rgba(20, 20, 20, 1) 0%,
+            rgba(255, 255, 255, 0) 36%
     );
 }
 
@@ -474,9 +474,9 @@ a {
 
 .desc-image div {
     background: linear-gradient(
-        0deg,
-        rgba(51, 51, 51, 1) 0%,
-        rgba(126, 121, 121, 0) 36%
+            0deg,
+            rgba(51, 51, 51, 1) 0%,
+            rgba(126, 121, 121, 0) 36%
     );
 }
 
@@ -626,9 +626,9 @@ a {
 .card:hover .overlay {
     display: flex;
     background-image: linear-gradient(
-        to right,
-        rgba(51, 51, 51, 0.95),
-        rgba(255, 255, 255, 0.01)
+            to right,
+            rgba(51, 51, 51, 0.95),
+            rgba(255, 255, 255, 0.01)
     );
 }
 
@@ -643,7 +643,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100px;
-    background-color: #141414;
+    background-color: #141414; /*Fondo del footer, @2023, Universidad...*/
     justify-content: center;
     align-items: center;
 }
@@ -653,7 +653,7 @@ a {
     margin: 15px 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .bottom .btn-row h4 {
