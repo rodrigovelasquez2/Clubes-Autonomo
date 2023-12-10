@@ -1,0 +1,38 @@
+[
+  {
+    "id": "card1",
+    "title": "BTS Island: In the Seom",
+    "description": "Juego de rompecabezas con los siete miembros del grupo como protagonistas.",
+    "urlVideo": "https://www.youtube.com/embed/dyhMYSGIxpk?si=KASUj3Pq5nwNfp9f"
+  },
+  {
+    "id": "card2",
+    "title": "Mortal Kombat",
+    "description": "La travesía de Liu Kang para salvar al mundo del malvado hechicero Shang Tsung, travesía que acaba con su enfrentamiento en el torneo llamado Mortal Kombat",
+    "urlVideo": "https://www.youtube.com/embed/7zkHyCh0pjE?si=P3zOiifK9BGzhdx6"
+  },
+  {
+    "id": "card3",
+    "title": "Resident Evil",
+    "description": "Sigue a Chris Redfield y Jill Valentine, miembros de una fuerza de élite conocida como S.T.A.R.S., mientras investigan las afueras de Raccoon City tras la desaparición de los miembros de su equipo",
+    "urlVideo": "https://www.youtube.com/embed/VIDEO_ID"
+  },
+  {
+    "id": "card4",
+    "title": "Overwatch",
+    "description": "Juego de acción en equipo gratuito ambientado en un futuro optimista en el que todas las partidas presentan una refriega definitiva 5c5.",
+    "urlVideo": "https://www.youtube.com/embed/U8mBEZlMOKc?si=X6k-8F2dXYxRec1d"
+  },
+  {
+    "id": "card5",
+    "title": "Super Mario Odyssey",
+    "description": "Únete a Mario y su compañero Cappy en esta monumental aventura en 3D al mejor estilo trotamundos con Super Mario Odyssey para Nintendo Switch.",
+    "urlVideo": "https://www.youtube.com/embed/A5zPmAKlPds?si=LCwiX8bOshbzXkOZ"
+  },
+  {
+    "id": "card6",
+    "title": "Splatoon",
+    "description": "Serie de videojuegos de disparos en tercera persona de Nintendo.",
+    "urlVideo": "https://www.youtube.com/embed/M3lA45J2bFY?si=7XB0mtUSKtwwuJqk"
+  }
+]

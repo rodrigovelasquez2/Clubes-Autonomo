@@ -12,7 +12,7 @@ var stompClient = null;
 var username = null;
 
 var colors = [
-    '#2196F3', '#32c787', '#00BCD4', '#ff5652',
+    '#2196F3', '#32c787', '#72d6e3', '#ff5652',
     '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
 ];
 
@@ -133,3 +133,24 @@ function getAvatarColor(messageSender) {
 }
 usernameForm.addEventListener('submit', connect, true)
 messageForm.addEventListener('submit', sendMessage, true)
+
+
+//Peticion al api mediante id pasado por el main apge
+const params = new URLSearchParams(window.location.search);
+const videojuegoId = params.get('id');
+const videoDetailsContainer = document.getElementById('container_id_video');
+
+getVideojuegoById(videojuegoId).then(videojuego => {
+    // Actualiza el contenido del bloque HTML con los detalles del videojuego
+    videoDetailsContainer.innerHTML = `
+        <div class="video-container">
+            <iframe width="100%" height="400" src="${videojuego.urlVideo}" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="video-details">
+                <h5 class="fw-bolder">${videojuego.title}</h5>
+                <p class="fw-normal">${videojuego.description}</p>
+            </div>
+        </div>
+    `;
+});

@@ -296,6 +296,7 @@ const ResizeHeader = () => {
 
 
 const AddCards = () => {
+
     let carousel_width = document.getElementsByClassName("card-carousel")[0]
         .clientWidth;
 
@@ -329,7 +330,7 @@ const AddCards = () => {
         for (let j = 0; j < cards.length; j++) {
             let chosen_index = Math.floor(Math.random() * not_chosen.length);
 
-            let chosen_card = cards[j];
+            let chosen_card = cards[j]; //Obtiene cada objeto del cards
 
             not_chosen.splice(chosen_index, 1);
 
@@ -358,14 +359,13 @@ const AddCards = () => {
             button_container.classList.add("button-container");
 
             let button1 = document.createElement("div");
-            button1.href = "chatWeb.html"; 
+            button1.href = "chatWeb.html?id=" + chosen_card.id;
             button1.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
   <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 </svg>`;
             button1.classList.add("watch");
-
             button1.addEventListener("click", function() {
-                window.location.href = "chatWeb.html";
+                window.location.href = "chatWeb.html?id=" + chosen_card.id;
             });
         
             let button3 = document.createElement("div");
