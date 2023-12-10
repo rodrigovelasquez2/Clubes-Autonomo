@@ -1,1 +1,3 @@
-http://localhost:8087/api/save-all
+Colocar en : POST
+Pegar: http://localhost:8087/api/save-all
+Ejecutar!
