@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="right-navc">
-                <div class="button-containerc loginc">
+                <div class="button-containerc loginc" onclick="confirmLogout()">
                     <h2>Salir</h2>
                 </div>
             </div>
@@ -116,5 +116,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="js/api-client.js"></script>
 <script src="js/chatWeb.js"></script>
+
+
+    <!--Confirmacion de logout-->
+    <script>
+        function confirmLogout() {
+            var confirmLogout = window.confirm("¿Estás seguro de que quieres salir?");
+            if (confirmLogout) {
+                // Agregar un retraso de 2 segundos (2000 milisegundos) antes de redirigir
+                setTimeout(function () {
+                    // Cambiar el historial del navegador y redirigir
+                    history.pushState(null, null, 'index.html');
+                    window.location.href = 'index.html';
+                }, 500); // Cambiar el valor de 2000 según la duración deseada en milisegundos
+            }
+        }
+    </script>
+
+
 </body>
 </html>
