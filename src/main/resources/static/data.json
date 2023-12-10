@@ -15,7 +15,7 @@
     "id": "card3",
     "title": "Resident Evil",
     "description": "Sigue a Chris Redfield y Jill Valentine, miembros de una fuerza de élite conocida como S.T.A.R.S., mientras investigan las afueras de Raccoon City tras la desaparición de los miembros de su equipo",
-    "urlVideo": "https://www.youtube.com/embed/VIDEO_ID"
+    "urlVideo": "https://www.youtube.com/embed/sudvB8_iYUE?si=BGi5D4w8LoLrmVwO"
   },
   {
     "id": "card4",
@@ -34,5 +34,105 @@
     "title": "Splatoon",
     "description": "Serie de videojuegos de disparos en tercera persona de Nintendo.",
     "urlVideo": "https://www.youtube.com/embed/M3lA45J2bFY?si=7XB0mtUSKtwwuJqk"
+  },
+
+  {
+    "id": "card7",
+    "title": "Bungou Stray dogs #1",
+    "description": "TOP: Muertes de bungou Stray dogs",
+    "urlVideo": "https://www.youtube.com/embed/XjbAr1GgKBc?si=OQHdJ8BN7DaT-1lb"
+  },
+  {
+    "id": "card8",
+    "title": "Bungou Stray dogs #2",
+    "description": "¿Quién es chuya Nakamahara?",
+    "urlVideo": "https://www.youtube.com/embed/n5-5Bi7_Tc4?si=rMG0Af8uqhoMX47R"
+  },
+  {
+    "id": "card9",
+    "title": "Netflix anime",
+    "description": "Top los mejores animes en Netflix",
+    "urlVideo": "https://www.youtube.com/embed/Y5Uz-PyojYA?si=f2_hQjWQC7TdZ1k_"
+  },
+  {
+    "id": "card10",
+    "title": "Dibujar Anime #1",
+    "description": "Aprende a dibujar anime siguiendo estos consejos.",
+    "urlVideo": "https://www.youtube.com/embed/C0_IgbfmkmA?si=5Y3QNxT7noLi5y-7"
+  },
+  {
+    "id": "card11",
+    "title": "Dibujar Anime #2",
+    "description": "Aprende a dibujar rostro de anime siguiendo estos consejos.",
+    "urlVideo": "https://www.youtube.com/embed/h1BOqVohhnM?si=Cvyj9PmDCtnf6uJe"
+  },
+  {
+    "id": "card12",
+    "title": "Dibujar Anime #3",
+    "description": "Aprende a dibujar anime siguiendo estos consejos.",
+    "urlVideo": "https://www.youtube.com/embed/hJtvT98ZhjY?si=q_-I0WvweAcaE4Dr"
+  },
+  {
+    "id": "card13",
+    "title": "Especial mascota #1",
+    "description": "Dia especial de las mascotas",
+    "urlVideo": "https://www.youtube.com/embed/eJaSZF8rZoE?si=SRY5-S4UlRIweoZw"
+  },
+  {
+    "id": "card14",
+    "title": "Cuidados de tu mascota #1",
+    "description": "Ten en cuenta los siguientes pasos",
+    "urlVideo": "https://www.youtube.com/embed/LZ9AKsUCcTI?si=DcnrZAInCrNQC1_C"
+  },
+  {
+    "id": "card15",
+    "title": "Cuidados de tu mascota #2",
+    "description": "Ten en cuenta los siguientes pasos",
+    "urlVideo": "https://www.youtube.com/embed/z6qn2YzE54M?si=NcJ8qZkxh4zYMYsB"
+  },
+  {
+    "id": "card16",
+    "title": "Cuidados de tu mascota #3",
+    "description": "Ten en cuenta los siguientes pasos",
+    "urlVideo": "https://www.youtube.com/embed/1aXIiXUCZVU?si=LneFutOIbdNA4O7A"
+  },
+  {
+    "id": "card17",
+    "title": "Cuidados de tu mascota #4",
+    "description": "Ten en cuenta los siguientes pasos",
+    "urlVideo": "https://www.youtube.com/embed/TbgB5zH8_3E?si=cPR6UBciSJYFKVoc"
+  },
+  {
+    "id": "card18",
+    "title": "Cuidados de tu mascota #5",
+    "description": "Ten en cuenta los siguientes pasos",
+    "urlVideo": "https://www.youtube.com/embed/NL0A7a8fYvc?si=rX0NoPQH9jg--XIW"
+  },
+  {
+    "id": "card19",
+    "title": "TOP LIBROS #1",
+    "description": "Conocelos",
+    "urlVideo": "https://www.youtube.com/embed/V_rpUUPrDaA?si=T4XLmXejqTmC5aZh"
+  },
+  {
+    "id": "card20",
+    "title": "TOP LIBROS #2",
+    "description": "Conocelos",
+    "urlVideo": "https://www.youtube.com/embed/JP1aN7UlB24?si=fPOPFLOb9JcF7gAc"
+  },
+  {
+    "id": "card21",
+    "title": "TOP LIBROS #3",
+    "description": "Conocelos",
+    "urlVideo": "https://www.youtube.com/embed/xxHH10n0k4o?si=6RRuWJpC5KKCT1z_"
+  },
+  {
+    "id": "card22",
+    "title": "TOP LIBROS #4",
+    "description": "Conocelos",
+    "urlVideo": "https://www.youtube.com/embed/xky-sIkQ4Ys?si=FvfnENKk6Al47_B4"
   }
 ]
+
+
+
