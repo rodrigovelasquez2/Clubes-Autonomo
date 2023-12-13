@@ -40,7 +40,7 @@ async function iniciarSesion() {
             // Comprueba si el inicio de sesión fue exitoso.
             if (respuestaJSON.mensaje === "FAIL") {
                 alert("Usuario o contraseña incorrectos. ¡Por favor, ingrese la información correcta!");
-                alert(respuesta);
+                //alert(respuesta);
 
             } else {
                 // Si es exitoso, almacena el token JWT y el correo del usuario en el localStorage para el chat web
@@ -49,7 +49,7 @@ async function iniciarSesion() {
 
                 // Redirige al usuario a la página 'maingPage.html';
                 window.location.href = 'mainPage.html';
-                alert("Usuario registrado");
+                //alert("Usuario registrado!");
 
                 //Pruebas de variables
                 // console.log("RESPUESTA JSON"+ respuestaJSON);

@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Entity
-@Table
+@Table(name = "Videojuegos")
 @Data @RequiredArgsConstructor
 @AllArgsConstructor
 public class Videojuego {
