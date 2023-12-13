@@ -22,3 +22,9 @@ INSERT INTO Videojuegos (id, title, description, url_video) VALUES
 ('card20', 'TOP LIBROS #2', 'Conocelos', 'https://www.youtube.com/embed/JP1aN7UlB24?si=fPOPFLOb9JcF7gAc'),
 ('card21', 'TOP LIBROS #3', 'Conocelos', 'https://www.youtube.com/embed/xxHH10n0k4o?si=6RRuWJpC5KKCT1z_'),
 ('card22', 'TOP LIBROS #4', 'Conocelos', 'https://www.youtube.com/embed/xky-sIkQ4Ys?si=FvfnENKk6Al47_B4');
+
+INSERT INTO usuarios (id, nombre, apellido, email, password, rol) VALUES
+    (1, 'Juan', 'Pérez', 'juan.perez@example.com', '123456', 'USUARIO'),
+    (2, 'María', 'García', 'maria.garcia@example.com', '654321', 'USUARIO'),
+    (3, 'Pedro', 'López', 'pedro.lopez@example.com', 'qwerty', 'USUARIO'),
+    (4, 'Ana', 'González', 'ana.gonzalez@example.com', 'asdfgh', 'USUARIO');
