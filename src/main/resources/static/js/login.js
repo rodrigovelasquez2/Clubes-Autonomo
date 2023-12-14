@@ -29,8 +29,8 @@ async function iniciarSesion() {
     const tokenJWT = respuestaJSON.tokenJWT; // Accedemos a la propiedad 'tokenJWT' del objeto JSON
     const rol = respuestaJSON.usuario.rol;
 
-    alert("RESPUESTA: "+respuesta + "RESPUESTA JSON: "+respuestaJSON + "TOKEN JWT: "+tokenJWT + "RESPUESTA JSON.mensaje: "+respuestaJSON.mensaje);
-    alert("ROL" + rol);
+    // alert("RESPUESTA: "+respuesta + "RESPUESTA JSON: "+respuestaJSON + "TOKEN JWT: "+tokenJWT + "RESPUESTA JSON.mensaje: "+respuestaJSON.mensaje);
+    // alert("ROL" + rol);
     // Comprueba si el inicio de sesión fue exitoso.
     if (respuestaJSON.mensaje === "FAIL") {
         alert("Usuario o contraseña incorrectos. ¡Por favor, ingrese la información correcta!");
