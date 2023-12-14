@@ -55,9 +55,9 @@ public class CursoApplication {
 			);
 
 			videojuegoRepository.saveAll(videojuegos);
-
+			//admin@gmail.com password: admin
 			List<Usuario> usuarios = Arrays.asList(
-					new Usuario(1L, "Juan", "Pérez", "juan.perez@example.com", "123456", "ADMINISTRADOR"),
+					new Usuario(1L, "Juan", "Pérez", "admin@gmail.com", "$argon2id$v=19$m=1024,t=1,p=1$eD0VfiIkj1aQOyUe/Uwr9A$ftV6syUwP8/wXtX1heCAYG4ZSsnsmg/ro91+C0f8PRY", "ADMINISTRADOR"),
 					new Usuario(2L, "María", "García", "maria.garcia@example.com", "654321", "USUARIO"),
 					new Usuario(3L, "Pedro", "López", "pedro.lopez@example.com", "qwerty", "USUARIO"),
 					new Usuario(4L, "Ana", "González", "ana.gonzalez@example.com", "asdfgh", "USUARIO")
