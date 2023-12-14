@@ -53,6 +53,8 @@ public class UsuarioService implements UsuarioDAO {
             if (argon2.verify(passwordHashed, usuario.getPassword())){  // Verificar si la contraseña proporcionada coincide con la almacenada.
                 log.info("Usuario encontrado! {}", usuarioEncontrado);  // Las credenciales son válidas, usuario autenticado con éxito.
                 return usuarioEncontrado;
+            }else{
+                usuarioEncontrado = null;
             }
         }
         return usuarioEncontrado;    // Si el usuario no existe o la contraseña no coincide, devolver null.

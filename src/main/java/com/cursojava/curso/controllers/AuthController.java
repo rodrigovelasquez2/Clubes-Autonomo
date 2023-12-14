@@ -20,8 +20,8 @@ public class AuthController {
     @Autowired
     private JWTUtil jwtUtil;
 
-    @RequestMapping(value = "api/login", method = RequestMethod.POST)
-       public Map<String, Object> login(@RequestBody Usuario usuario) {
+    @RequestMapping(value = "/api/login", method = RequestMethod.POST)
+    public Map<String, Object> login(@RequestBody Usuario usuario) {
         Usuario usuarioLogeado = usuarioDAO.obtenerUsuarioPorCredenciales(usuario);
 
         if (usuarioLogeado != null) {

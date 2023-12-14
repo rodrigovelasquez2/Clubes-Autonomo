@@ -6,11 +6,13 @@ import de.mkammerer.argon2.Argon2Factory;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository // Podra acceder al repositorio de la base de datos
+@Slf4j
 @Transactional // Como ejecutara la base de datos
 public class UsuarioDAOImp implements UsuarioDAO {
 
@@ -48,7 +50,7 @@ public class UsuarioDAOImp implements UsuarioDAO {
         if (lista.isEmpty()) { // Lista vacia
             return null; // nulo,
         }//Fin if
-
+        log.info(""+lista);
         String passwordHashed = lista.get(0).getPassword(); // Obtienes la contraseña
         Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
         if (argon2.verify(passwordHashed, usuario.getPassword())){
